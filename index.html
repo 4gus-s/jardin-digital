@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página de Agus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="estilomural.css" rel="stylesheet">
+  </head>
+  <body>
+
+     <div class="container-fluid text-center">
+
+      <div id="fondo"></div>
+<p class="txt t1" data-autor="Kali Uchis" data-bg="img/bg1.jpg">A - aunque no he llegado a donde yo quiero, I won't ever go back where i used to be</p>
+<p class="txt2 t2" data-autor="Death Grips" data-bg="img/bg2.png">B - beware, god is watching</p>
+<p class="txt t3" data-autor="Tyler, The Creator" data-bg="img/bg3.png">C - could you tell me how far in the future do you see us?</p>
+<p class="txt2 t4" data-autor="Yazoo" data-bg="img/bg4.jpg">D - Don't you know I ain't never let you go</p>
+<p class="txt t5" data-autor="El Polaco" data-bg="img/bg5.jpg">E - en este mundo no seria feliz, si no te tengo junto a mi</p>
+<p class="txt2 t6" data-autor="Denzel Curry" data-bg="img/bg6.jpg">F - fear of loss, fear of change, fear of losing my peers</p>
+<p class="txt t7" data-autor="Sam Gellaitry" data-bg="img/bg7.jpg">G - give me it all till you run out</p>
+<p class="txt2 t8" data-autor="18 Kilates" data-bg="img/bg8.jpg">H - hoy mas que nunca seguiré hacia adelante</p>
+
+<p class="txt t3" data-autor="Kraftwerk" data-bg="img/bg9.png">I - Im Scheinwerferlicht ihr junges Lächeln strahlt</p>
+<p class="txt2 t4" data-autor="John Miles" data-bg="img/bg10.jpg">J - just draw your own conclusion, it's gonna happen anyway</p>
+
+<p class="txt t1" data-autor="PinkPantheress" data-bg="img/bg11.jpg">K - know the feeling well of being loved</p>
+<p class="txt2 t2" data-autor="Steve Lacy" data-bg="img/bg12.jpg">L - let down your guard and be honest enough to let it out, i'm in your world</p>
+
+<p class="txt t7" data-autor="[Alexandros]" data-bg="img/bg13.jpg">M - monsters knocking, knocking at my windows</p>
+<p class="txt2 t8" data-autor="Intoxicados" data-bg="img/bg14.png">N - necesito algo que me haga sentir vivo</p>
+
+<p class="txt t3" data-autor="PinkPantheress" data-bg="img/bg15.jpg">O - Open up yours doors to me and I'll enter inside it</p>
+<p class="txt2 t4" data-autor="JPEGMAFIA" data-bg="img/bg16.jpg">P - pray, every day that i wake is a gift, know some sons don't see mourning</p>
+
+<p class="txt t7" data-autor="Nova y Jory" data-bg="img/bg17.jpg">Q - quizás no se dará otra chance</p>
+<p class="txt2 t8" data-autor="Wheelchair Sports Camp" data-bg="img/bg18.png">R - rise and shine you made it</p>
+
+<p class="txt t3" data-autor="The Internet" data-bg="img/bg19.jpg">S - said hold on, can't stop love</p>
+<p class="txt2 t1" data-autor="Daft Punk" data-bg="img/bg20.jpg">T - the prime time of your life</p>
+
+<p class="txt t5" data-autor="Dillom" data-bg="img/bg21.jpg">U - ultimamente, este lugar se siente un poco diferente</p>
+<p class="txt2 t6" data-autor="Gilda" data-bg="img/bg22.jpg">V - vivirás dentro de mí</p>
+
+<p class="txt t1" data-autor="Chris Isaak" data-bg="img/bg23.png">W - what a wicked thing to do, to let me dream of you</p>
+
+<p class="txt2 t2" data-autor="Néstor en Bloque" data-bg="img/bg24.png">Y - yo sé que al ventanal mañana asomará su cara angelical</p>
+<p class="txt t3" data-autor="t.A.T.u." data-bg="img/bg25.jpg">Z - za oblaka, za oblakami</p>
+     </div>
+
+<script>
+
+const fondo = document.getElementById("fondo");
+
+document.querySelectorAll('.txt, .txt2').forEach(texto => {
+
+    texto.addEventListener('mouseenter', () => {
+
+        fondo.style.backgroundImage =
+            `url("${texto.dataset.bg}")`;
+
+        fondo.style.opacity = "1";
+
+    });
+
+    texto.addEventListener('mouseleave', () => {
+
+        fondo.style.opacity = "0";
+
+    });
+
+});
+
+</script>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

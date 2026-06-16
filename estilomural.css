@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Fruktur:ital@0;1&family=Fuzzy+Bubbles:wght@400;700&family=Indie+Flower&family=Rubik+Burned&family=Rubik+Wet+Paint&family=Twinkle+Star&family=Uncial+Antiqua&display=swap');
+
+
+body{
+    margin:0;
+    width:100vw;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:#131313;
+}
+.bg0{ background-color:#131313;}
+
+
+#fondo{
+    position:fixed;
+    background-size:cover;
+    background-position:center;
+    inset:0;
+    z-index:0;
+    transition:opacity .9s ease;
+}
+
+.container-fluid { 
+  padding-inline:200px;
+}
+
+
+
+/*TEXTOSSSSSS*/
+
+.txt, .txt2{
+    transition:0.3s ease;
+    color:white;
+    font-size:40px;
+    margin:0;
+    user-select:none;
+    text-shadow:
+        -3px -3px 0 #000,
+         3px -3px 0 #000,
+        -3px  3px 0 #000,
+         3px  3px 0 #000;
+
+    margin-top:20px;
+    margin-bottom:120px;
+    position: relative;
+    z-index:1;
+}
+
+.txt:hover,
+.txt2:hover{
+    transform:scale(1.2) rotate(0deg);
+    animation: arcoiris 6s linear infinite;
+}
+
+
+/*TEXTOS DE MUSICA*/
+.t1{ transform:rotate(0deg);  font-family:"Bitcount Grid Double", monospace; }
+.t2{ transform:rotate(3deg);  font-family:"Fruktur", monospace;}
+.t3{ transform:rotate(-9deg);  font-family: "Rubik Wet Paint", monospace;}
+.t4{ transform:rotate(4deg);  font-family: "Twinkle Star", monospace;}
+.t5{ transform:rotate(5deg);  font-family:"Fuzzy Bubbles", monospace;}
+.t6{ transform:rotate(2deg);  font-family:"Indie Flower", monospace;}
+.t7{ transform:rotate(3deg);  font-family: "Uncial Antiqua", monospace;}
+.t8{ transform:rotate(-9deg);  font-family: "Rubik Burned", monospace;}
+
+/*para el hover*/
+.txt:hover::after,
+.txt2:hover::after{
+    content: attr(data-autor);
+
+    position:absolute;
+    left:45%;
+    top:100%;
+
+    margin-top:10px;
+    padding:8px 12px;
+
+    background:black;
+    color:white;
+    border-radius:8px;
+
+    font-size:20px;
+    font-family:monospace;
+    white-space:nowrap;
+
+    z-index:9999;
+}
+
+
+@keyframes arcoiris {
+    0%   { color: #ff0000; }
+    16%  { color: #ff8000; }
+    33%  { color: #ffff00; }
+    50%  { color: #00ff00; }
+    66%  { color: #00ffff; }
+    83%  { color: #0000ff; }
+    100% { color: #ff00ff; }
+}
+
+.t1 { animation-delay: 0s; }
+.t2 { animation-delay: -1s; }
+.t3 { animation-delay: -2s; }
+.t4 { animation-delay: -3s; }
+.t5 { animation-delay: -4s; }
+.t6 { animation-delay: -5s; }
+
+

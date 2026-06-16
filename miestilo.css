@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Rubik+Wet+Paint&display=swap');
+body { background-size: cover;
+       background-color:  #131313;
+     background-repeat: no-repeat; }
+
+     .bg1 { background-image: url("img/el\ fondo\.png");}
+     .bg2 { background-image: url("img/el\ fondo\ 2.png");}
+     .bg3 { background-image: url("img/el\ fondo\ 3.png");}
+     .bg4 { background-image: url("img/click1.png");}
+
+.navbar { background-color: #131313;}
+.navbar-nav { color: white;
+    font-family: "Lucida Console", sans-serif;
+    margin: 1px; 
+    padding: 1px; }
+.navbar-nav .nav-link:hover { 
+    color: red; 
+    outline: solid yellow 1px;
+    transition: all 0.3s ease;}
+
+h1,h2,h3,h4,h5 {
+    color: white;
+    font-family: "Protest Guerrilla",serif;
+    text-shadow: 3px 3px 3px black;
+    transition: all 0.3s ease;
+    }
+
+p { color: white;
+    font-family: "Lucida Console", sans-serif;
+    }
+.parrafo { color:gray;
+    font-family: "Lucida Console", sans-serif;
+    }
+
+img { max-width: 100%;}
+
+section { padding: 10px;
+
+          border-radius: 15px; }
+
+a {text-decoration: none;}
+
+.volver { color: white;
+    border: solid white 1px;
+    padding: 3px 10px;
+    margin-top: 15px;
+}  
+.volver:hover { color: red; 
+    border: solid yellow 1px;
+    padding: 3px 10px;
+}
+
+.modal-content { background-color:  #343a40;
+    font-family: "Lucida Console", sans-serif;
+}
+.btn-secondary { border: solid white 1px;
+background-color: transparent; 
+}
+.btn-secondary:hover { background-color: transparent;
+    border: solid yellow 1px;
+color: red;
+}
+
+.custom-carousel {
+    max-width: 1200px; /* Ancho máximo del carrusel */
+    max-height: 600px; /* Altura máxima del carrusel */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+.custom-carousel .carousel-inner img {
+    object-fit: contain; /* Ajusta cómo se muestra la imagen */
+    height: 600px; /* Ajusta la altura de las imágenes */
+}
+
+.card {background-color: transparent;
+border: solid white 1px;}
+.col-md-4 img {
+    object-fit: cover; /* Hace que la imagen cubra toda el área de la columna */
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de la columna */
+    height: 100%; /* Asegura que la imagen ocupe el 100% del alto de la columna */
+  }
+.custom-hover img:hover { 
+    opacity: 0.5;
+    cursor: pointer; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  opacity: 0.8;
+  width: 50px;
+  height: 50px; 
+}
+
+.accordion-item, .accordion-button, .accordion-body, .accordion-button:not(.collapsed) {
+  background-color: #131313;
+  font-family: "Lucida Console", sans-serif;
+  color: white;
+  border: 1px solid white;
+}
+.accordion-button.collapsed, .accordion-button:not(.collapsed) { padding: 16px 20px; }
+
+.accordion-button:hover { color: yellow;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card-img-top {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    height: 200px; /* Define una altura fija */
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+  }
+
+  .banner { 
+   
+    background-image: url(img/mainbanner.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+  }
+  .banner-text { font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.6;
+    font-size: 15em;
+  }
+  
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 8rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-text {
+    font-size: 6rem;
+  }
+}
